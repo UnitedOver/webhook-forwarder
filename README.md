@@ -152,17 +152,17 @@ API gateway will be used to receive your webhook calls as a proxy
 7. Select **POST** in this dropdown and click on the **Tick icon**
 ![](https://i.vgy.me/rHDQmx.png)
 
-8. Create Integration Setup with the details mentioned below
--- **Integration Type**: AWS Service
--- **AWS Region**: select the preferred region where you want the API to be deployed (you can select any)
--- **AWS Service**: Simple Queue Service (SQS)
--- **AWS Subdomain**: you can leave this blank
--- **HTTP method**: POST
--- **Action Type**: Use path override
--- **Path override**: add the SQS queue path here (not the whole URL). The one you noted down in Point A.6 (Queue URL). This will look something like **4998656233/webhook.fifo**
--- **Execution role**: add the ARN of Execution role you created for SQS in **Point B.ii.7**
--- **Content Handling**: Passthrough
--- **Use Default Timeout**: Ticked
+8. Create Integration Setup with the details mentioned below  
+-- **Integration Type**: AWS Service  
+-- **AWS Region**: select the preferred region where you want the API to be deployed (you can select any)  
+-- **AWS Service**: Simple Queue Service (SQS)  
+-- **AWS Subdomain**: you can leave this blank  
+-- **HTTP method**: POST  
+-- **Action Type**: Use path override  
+-- **Path override**: add the SQS queue path here (not the whole URL). The one you noted down in Point A.6 (Queue URL). This will look something like **4998656233/webhook.fifo**  
+-- **Execution role**: add the ARN of Execution role you created for SQS in **Point B.ii.7**  
+-- **Content Handling**: Passthrough  
+-- **Use Default Timeout**: Ticked  
 ![](https://i.vgy.me/CB8HRP.png)
 
 9. On the next screen select **Integration Request**
